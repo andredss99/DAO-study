@@ -15,16 +15,22 @@
      */
 
     #Carrega uma lista de usuários buscando pelo login
-     /*
-      * $search = Usuario::search("jo");
-      * echo json_encode($search);
-      */
+    /*
+     * $search = Usuario::search("jo");
+     * echo json_encode($search);
+     */
     
     #Carrega um usuário usando o login e a senha
-    $usuario = new Usuario();
-    $usuario->login("root", "!@#$");
+    /*
+     * $usuario = new Usuario();
+     * $usuario->login("root", "!@#$");
+     * echo $usuario;
+     */
+    
+    $aluno = new Usuario("aluno2", "@lun02");
+    
+    $aluno->insert();
 
-    echo $usuario;
-     
+    echo $aluno;
 
 ?>
